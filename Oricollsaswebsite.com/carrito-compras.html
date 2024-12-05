@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compras Oricoll S.A.S.</title>
+  <link rel="stylesheet" href="assets/styles/carrito-com.css">
+</head>
+<body>
+
+  <!-- Cabecera -->
+  <header>
+    <h1>Oricoll S.A.S.</h1>
+    <button id="cartBtn">Ver Carrito (0)</button> <!-- Muestra la cantidad de productos en el carrito -->
+  </header>
+
+  <!-- Productos -->
+  <main>
+    <section id="products">
+      <div class="product" data-id="1">
+        <h3>Alimento para Pollitos</h3>
+        <p>Precio: $10</p>
+        <button class="add-to-cart">Agregar al Carrito</button>
+      </div>
+      <div class="product" data-id="2">
+        <h3>Alimento para Aves Jóvenes</h3>
+        <p>Precio: $15</p>
+        <button class="add-to-cart">Agregar al Carrito</button>
+      </div>
+      <div class="product" data-id="3">
+        <h3>Alimento para Aves Adultas</h3>
+        <p>Precio: $20</p>
+        <button class="add-to-cart">Agregar al Carrito</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal del Carrito -->
+  <div id="cartModal" class="modal">
+    <div class="modal-content">
+      <h2>Carrito</h2>
+      <ul id="cartItems"></ul> <!-- Aquí se mostrarán los productos añadidos al carrito -->
+      <p>Total: $<span id="totalAmount">0</span></p>
+      <button id="closeCart">Cerrar</button>
+    </div>
+  </div>
+
+  <script src="assets/scripts/carrito-com.js"></script> <!-- Conexión al archivo JS -->
+</body>
+</html>
